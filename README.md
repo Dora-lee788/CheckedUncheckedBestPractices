@@ -9,12 +9,15 @@
 
 Результаты и проверочные ключи
 
-Вызов                                                                 Ожидаемый результат
+Вызов  ->                                                               Ожидаемый результат
 
-SumChecked(new[] { 1, 2, 3 })                                         6
+SumChecked(new[] { 1, 2, 3 })        ->                                 6
 
-SumChecked(new[] { int.MaxValue, 1 })                                 предупреждение в лог, возвращает int.MaxValue
+SumChecked(new[] { int.MaxValue, 1 })      ->                             предупреждение в лог, возвращает int.MaxValue
 
-int.TryParse("42", out var n) после рефакторинга                      n == 42, без исключений
+int.TryParse("42", out var n) после рефакторинга      ->                  n == 42, без исключений
 
-int.TryParse("abc", out var n) после рефакторинга                     возвращает 0, без исключений
+int.TryParse("abc", out var n) после рефакторинга   ->                    возвращает 0, без исключений
+
+Скриншот результата
+![Результат работы программы](CheckedUncheckedBestPractices//ResultForKT8.png)
